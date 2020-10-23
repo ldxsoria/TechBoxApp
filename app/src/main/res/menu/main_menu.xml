@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Inicio"/>
+    </group>
+    <group android:checkableBehavior="single">
+
+        <item
+            android:title="Asistencia">
+            <menu>
+                <item
+                    android:id="@+id/nav_attendance"
+                    android:title="Marca Asistencia"/>
+                <item
+                    android:id="@+id/nav_attendance_report"
+                    android:title="Mi reporte de asistencias"/>
+
+            </menu>
+
+
+        </item>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:title="Inventario">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_viewItems"
+                    android:title="Ver registros"/>
+                <item
+                    android:id="@+id/nav_addItem"
+                    android:title="Registrar Item "/>
+            </menu>
+
+
+        </item>
+        <item
+            android:id="@+id/nav_reports"
+            android:title="Reportes"/>
+
+    </group>
+
+</menu>

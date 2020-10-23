@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.NewItem">
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+       android:layout_width="wrap_content"
+       android:layout_height="@dimen/_40sdp"
+       android:src="@drawable/ic_arrow_back"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+       app:tint="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tvTitleForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:text="Nuevo item"
+        android:textColor="#000"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_cod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="8"
+                android:hint="Ingresa el codigo de inventario"
+                android:textSize="@dimen/_14sdp" />
+
+            <ImageView
+                android:id="@+id/btn_camera1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/et_cod"
+                android:src="@drawable/ic_camera"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="Selecciona el tipo de item:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/_14sdp"/>
+
+        <Spinner
+            android:id="@+id/spr_tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_14sdp"
+            android:paddingBottom="@dimen/_14sdp"
+            android:layout_gravity="center"
+            android:isScrollContainer="true"
+            android:spinnerMode="dialog" />
+
+        <EditText
+            android:id="@+id/et_marca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:hint="Marca"/>
+
+        <EditText
+            android:id="@+id/et_modelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:hint="Modelo"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_serial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de serie"
+                android:textSize="@dimen/_14sdp" />
+
+            <ImageView
+                android:id="@+id/btn_camera2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/et_serial"
+                android:src="@drawable/ic_camera"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:hint="Descripción"/>
+
+        <EditText
+            android:id="@+id/et_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:hint="Ingresa el codigo de área"/>
+
+
+        <Button
+            android:id="@+id/btn_add_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_14sdp"
+            android:layout_margin="@dimen/_50sdp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_color"
+            android:text="Registrar"/>
+    </LinearLayout>
+
+</LinearLayout>
